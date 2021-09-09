@@ -10,12 +10,12 @@ import java.util.Objects;
 public class Code03Sort {
   public static void main(String[] args) {
     int[] arr = {3, 1, 4, 14, 5, 18, 6, 5, 9, 77, 4, 6, 3};
-    arr = null;
-    arr = new int[0];
+//    arr = null;
+//    arr = new int[0];
     printArr(arr);
-    // selectSort(arr);
+     selectSort(arr);
     //    bubbleSort(arr);
-    insertSort(arr);
+//    insertSort(arr);
     printArr(arr);
   }
 
@@ -68,12 +68,13 @@ public class Code03Sort {
       return;
     }
     for (int i = 0; i < arr.length; i++) {
+      int min = i;
       for (int j = i + 1; j < arr.length; j++) {
-        int min = arr[i];
         if (arr[j] < arr[i]) {
-          swap(arr, i, j);
+          min = j;
         }
       }
+      swap(arr, i, min);
     }
   }
 

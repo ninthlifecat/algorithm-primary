@@ -5,7 +5,7 @@ package one;
  * @date 2021-09-08 19:37
  * @apiNote
  */
-public class Cold01PrintBinary {
+public class Code01PrintBinary {
   public static void main(String[] args) {
     printBinary(-10);
     System.out.println(Integer.toBinaryString(-10));
