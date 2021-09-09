@@ -1,6 +1,7 @@
 package two;
 
 public class Code01PreSum {
+  //数组某一区间和
   public static void main(String[] args) {
     int[] arr = {1, 4, 5, 3, 6, 3, 2, 8};
     RangeSum1 rangeSum1 = new RangeSum1(arr);
