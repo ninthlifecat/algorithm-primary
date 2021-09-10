@@ -1,38 +1,19 @@
 package two;
 
+import java.util.Arrays;
+
 /** @author yinzhe */
 public class Code02RandToRand {
   public static void main(String[] args) {
     int testTime = 100000;
-    int count1 = 0;
-    int count2 = 0;
-    int count3 = 0;
-    int count4 = 0;
-    int count5 = 0;
-    int countWrong = 0;
+    int count=10;
+    int[] arr=new int[count];
     for (int i = 0; i < testTime; i++) {
-      int num = equalProbably1To5();
-
-      if (num == 1) {
-        count1++;
-      } else if (num == 2) {
-        count2++;
-      } else if (num == 3) {
-        count3++;
-      } else if (num == 4) {
-        count4++;
-      } else if (num == 5) {
-        count5++;
-      } else {
-        countWrong++;
-      }
+      //int num = equalProbably1To5();
+      int num = equalProbably0To1();
+      arr[num]++;
     }
-    System.out.println(count1);
-    System.out.println(count2);
-    System.out.println(count3);
-    System.out.println(count4);
-    System.out.println(count5);
-    System.out.println(countWrong);
+    System.out.println(Arrays.toString(arr));
   }
 
   /**
