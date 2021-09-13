@@ -15,6 +15,9 @@ public class Code01_BSExist {
       int value = (int) (Math.random() * (maxValue + 1)) - (int) (Math.random() * (maxValue + 1));
       if (test(arr, value) != find(arr, value)) {
         System.out.println("出错了！");
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(value);
         success = false;
         break;
       }
